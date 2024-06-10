@@ -17,9 +17,11 @@ function showUserdeviceInfo() {
 }
 // export default showUserdeviceInfo
 showUserdeviceInfo()
-
-
-
+// select all start divs
+const startContainerDivs = document.querySelectorAll("#Start-container")
+startContainerDivs.forEach(startdiv=>{
+    startdiv.style.border = "1px solid gray"
+})
 
 const logibBtn = document.querySelector("#login-btn")
 
