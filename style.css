@@ -1,0 +1,249 @@
+:root {
+  --fontirs: irs;
+  --fontbahman: bahman;
+  --fontlale: lale;
+  --fontaviny: aviny;
+  --color1: #04aa6d;
+  --color2: #6528e0;
+  --color3: rgb(7 112 112);
+  --color4: rgb(23, 240, 23);
+  --color5: #0c0025;
+  --color6: rgb(1, 1, 54);
+  --color7: #171615;
+  --color8: #1d1615;
+  --color9: #20211a;
+  --color10: #141514;
+  --color11: #0f0616;
+  --color12: #292827;
+  --bg-light: #eee;
+  --bg-dark: #444;
+  --bg-dark-2: #151515;
+}
+
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: irs;
+  src: url(IRANSansWeb_Bold.ttf);
+}
+
+@font-face {
+  font-family: lale;
+  src: url(Lalezar-Regular.ttf);
+}
+
+@font-face {
+  font-family: bahman;
+  src: url(Bahman\ 1.ttf);
+}
+
+@font-face {
+  font-family: aviny;
+  src: url(aviny.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  /* transition: background-color 1s; */
+  background-color: var(--bg-light);
+}
+
+/* mobile first design */
+@media (min-width: 300px) {
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    font-family: var(--fontirs);
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 0;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px;
+    }
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  .menu-mobile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+    transform: translateY(-12px);
+    font-weight: bold;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    flex-direction: row;
+    background-color: white;
+    padding: 10px 20px;
+    margin: 3%;
+    top: 0;
+    border-radius: 10px;
+    /* filter: drop-shadow(1px 4px gray); */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    direction: rtl;
+    /* width: 99%; */
+  }
+  .logo-header {
+    clip-path: circle(50%);
+    width: 20%;
+    aspect-ratio: 2/2;
+  }
+  #login-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid gray;
+    width: 50%;
+    direction: ltr;
+    padding: 0;
+    margin: 0;
+  }
+  .login-icon {
+    width: 30px;
+    direction: ltr;
+    transform: translateX(-50%);
+  }
+  .login-p {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--fontirs);
+    /* transform: translateX(-50%); */
+  }
+  .logo-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 25%;
+    clip-path: circle(50%);
+    aspect-ratio: 2/2;
+    margin-right: 5%;
+    transform: translateY(-100%);
+    top: 0;
+  }
+  #info-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    font-family: var(--fontirs);
+  }
+  #info-menu:has(span) > span {
+    transform: translateX(100px) translateY(-380%);
+    top: 0;
+    font-size: 25px;
+    font-family: var(--fontlale);
+  }
+  #info-menu > p2 {
+    color: red;
+    font-weight: bold;
+    font-family: var(--fontlale);
+    font-size: 20px;
+    transform: translateX(10%) translateY(-480%);
+  }
+  input {
+    padding: 10px 20px;
+    border-radius: 20px;
+    /* background-color: ; */
+    border: 3px solid black;
+    width: 90%;
+    font-family: var(--fontirs);
+  }
+  input:focus {
+    border: none;
+    outline: 4px solid var(--color2);
+  }
+  .searchIcon {
+    width: 8%;
+    position: relative;
+    transform: translateY(140%);
+    right: 85%;
+  }
+  #Start-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 5%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .start > h2{
+    font-size: 19px;
+    text-align: center;
+  }
+  .start > h2 > span{
+    color : red;
+    font-family: var(--fontirs);
+  }
+  .start > p2{
+    font-family: var(--fontirs);
+    font-size: 20px;
+  }
+  .start > p1{
+    font-family: var(--fontirs);
+    font-size: 18px;
+    text-align: center;
+    color : gray ;
+  }
+  .start > p3{
+    text-align: right;
+    font-family: var(--fontlale);
+  }
+  .programmer-vector{
+    width: 100%;
+  }
+}
