@@ -18,6 +18,8 @@
       crossorigin="anonymous"
     ></script>
     <meta name="theme-color" content="#6528e0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +55,7 @@
                   </span>
                   <input
                     type="search"
-                    id="search"
+                    id="searchInput"
                     placeholder="نام دوره را وارد کنید"
                   />
                 </div>
@@ -79,11 +81,22 @@
             <p1 class="login-p">ورود / ثبت نام</p1>
           </button>
         </nav>
+
+        <nav id="res">
+          <img src="assets/logo.png" alt="logo" class="logo-menu-res">
+          <input type="search" placeholder="نام دروه را وارد کنید" id="searchInput">
+          <ul>
+            <li><a href="index.html">خانه</a></li>
+            <li><a href="#">دوره ها</a></li>
+            <li><a href="#">حساب کاربری</a></li>
+            <li><a href="#">دوره های خریداری شده</a></li>
+          </ul>
+        </nav>
       </section>
     </header>
     <br />
     <main>
-      <div id="Start-container">
+      <div id="Start-container" class="Start-container">
         <div class="start">
           <img
             src="assets/programmer.png"
@@ -166,14 +179,17 @@
               <li>آموزش کامل Tailwind</li>
               <li>آموزش کامل BootStrap</li>
               <li>آموزش کامل Javascript</li>
-              <li>آموش کامل React.js</li>
               <li>آموزش کامل کار با API</li>
+              <li>آموش کامل React.js</li>
               <li>بالا آوردن اولین سایت روی دامنه</li>
+              <li>اولین پروژه مشابه دیجی کالا</li>
+              <li>اولین پروژه مشابه فیلیمو</li>
             </ul>
           </div>
         </div>
       </div>
     </main>
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
+    <script type="module" src="search.js"></script>
   </body>
 </html>
