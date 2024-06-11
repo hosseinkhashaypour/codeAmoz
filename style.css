@@ -295,6 +295,32 @@ body {
   #res{
     display: none;
   }
+  #topics-container{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    background-color: white;
+    margin: 2%;
+    border-radius: 10px;
+    /* width: 100%; */
+    
+  }
+  .topics-lists{
+    margin: 5%;
+    border-radius: 10px;
+  }
+  .topics-lists > img{
+    border-radius: 10px;
+  }
+  .h-course{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fontlale);
+  }
+  .h-course::before{
+    content: ':';
+  }
 }
 
 /* responsive */
@@ -384,5 +410,4 @@ body {
 .start > img{
   width: 50%;
 }
-
 }
