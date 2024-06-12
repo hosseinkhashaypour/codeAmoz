@@ -11,10 +11,10 @@ closeMenu.addEventListener('click' , ()=>{
     document.getElementById("myNav").style.width = "0"
 })
 // select all start divs
-const startContainerDivs = document.querySelectorAll("#Start-container")
-startContainerDivs.forEach(startdiv => {
-    startdiv.style.border = "1px solid gray"
-})
+// const startContainerDivs = document.querySelectorAll("#Start-container")
+// startContainerDivs.forEach(startdiv => {
+//     startdiv.style.border = "1px solid gray"
+// })
 
 const logibBtn = document.querySelector("#login-btn")
 
